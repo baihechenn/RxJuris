@@ -4,7 +4,14 @@ import hashlib
 import base64
 import json
 import requests
-import keys
+from dotenv import load_dotenv
+import os
+
+# Load the .env file
+load_dotenv()
+
+# Access the environment variables
+api_key = os.getenv("API_KEY")
 
 # Replace with your actual API credentials
 api_key = f'{API_KEY}'
