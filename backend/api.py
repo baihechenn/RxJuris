@@ -4,10 +4,10 @@ import hashlib
 import base64
 import json
 import requests
+import keys
 
 # Replace with your actual API credentials
-api_key = 'YOUR_API_KEY'
-api_secret = 'YOUR_API_SECRET'
+api_key = f'{API_KEY}'
 url = 'https://api.gemini.com/v1/order/new'
 
 # Create the payload for a new order
