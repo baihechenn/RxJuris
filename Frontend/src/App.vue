@@ -115,6 +115,7 @@ export default {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
   color: #000; /* Default text color */
+  padding: 0px
 }
 
 /* Left branding section */
@@ -161,9 +162,10 @@ export default {
   color: #555; /* Slightly muted text for the description */
 }
 
-/* Badge styling (HIPAA Compliant, Real Time Feedback) */
+
 .badges {
   display: flex;
+  justify-content: space-evenly;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -194,7 +196,7 @@ export default {
 
 /* Individual cards (Consent Form, Radiology Image, etc.) */
 .format-card {
-  background-color: #ffffff;
+  background-color: #dfecf4;
   border-radius: 8px;
   /* Subtle shadow instead of a solid border */
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
@@ -217,7 +219,7 @@ export default {
 /* "Upload PDF" / "Upload Image" label styled as a button */
 .upload-label {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #00264e;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
