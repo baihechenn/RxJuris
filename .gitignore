@@ -1,7 +1,15 @@
-# Enviroment Variables
+# Node modules directory
+node_modules/
+
+# Environment variables
 .env
 
+# Uploaded files (temporary storage)
+uploads/
 
+# Log files
+*.log
 
-# Test Files
-test.py
+# OS generated files
+.DS_Store
+Thumbs.db
