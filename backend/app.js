@@ -101,7 +101,7 @@ app.post('/api/gemini', upload.array('documents', 10), async (req, res) => {
     // Create an instance of GoogleGenerativeAI with your API key.
     const genAI = new GoogleGenerativeAI(apiKey);
     // Choose the generative model (adjust model name if needed).
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
     // Generate content using the combined inputs.
     const result = await model.generateContent(inputs);
     res.json({ geminiResponse: result.response.text() });
