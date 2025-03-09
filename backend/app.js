@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
@@ -12,6 +13,7 @@ dotenv.config();
 const app = express();
 
 // Use express.json() for non-multipart JSON bodies.
+
 app.use(express.json());
 
 // Configure multer to store uploaded files temporarily.
